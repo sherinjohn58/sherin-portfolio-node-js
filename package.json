@@ -1,0 +1,22 @@
+{
+  "name": "sherin",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this template!",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "emailjs": "^3.4.0",
+    "emailjs-com": "^2.6.4",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.11",
+    "path": "^0.12.7",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "sherin",
+  "license": "MIT"
+}
