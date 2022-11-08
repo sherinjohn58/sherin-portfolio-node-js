@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 // var emailjs = require('emailjs-com');
 
 const port = process.env.PORT || 3000;
-app.use('/assets',express.static('assets'));
+app.use('/assets',express.static('src/assets'));
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -18,10 +18,10 @@ app.use((req, res, next) => {
   });
 
 app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname,'index.html'))
+    res.sendFile(path.join(__dirname,'src/index.html'))
 })
 app.get('/index.html', function(req,res){
-  res.sendFile(path.join(__dirname,'index.html'))
+  res.sendFile(path.join(__dirname,'src/index.html'))
 })
 // app.post('/send', (req, res) => {
 //     let output = `
